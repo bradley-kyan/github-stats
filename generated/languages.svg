@@ -16,11 +16,6 @@ svg {
   ry: 6px;
 }
 
-#gh-dark-mode-only:target #background {
-  fill: #0d1117;
-  stroke-width: 0.5px;
-}
-
 foreignObject {
   width: calc(100% - 10px - 32px);
   height: calc(100% - 10px - 24px);
@@ -34,11 +29,6 @@ h2 {
   font-weight: 600;
   color: rgb(36, 41, 46);
   fill: rgb(36, 41, 46);
-}
-
-#gh-dark-mode-only:target h2 {
-  color: #c9d1d9;
-  fill: #c9d1d9;
 }
 
 ul {
@@ -76,11 +66,6 @@ div.ellipsis {
   vertical-align: top;
 }
 
-#gh-dark-mode-only:target .octicon {
-  color: #8b949e;
-  fill: #8b949e;
-}
-
 .progress {
   display: flex;
   height: 8px;
@@ -89,10 +74,6 @@ div.ellipsis {
   border-radius: 6px;
   outline: 1px solid transparent;
   margin-bottom: 1em;
-}
-
-#gh-dark-mode-only:target .progress {
-  background-color: rgba(110, 118, 129, 0.4);
 }
 
 .progress-item {
@@ -110,16 +91,37 @@ div.ellipsis {
   color: rgb(36, 41, 46);
 }
 
-#gh-dark-mode-only:target .lang {
-  color: #c9d1d9;
-}
-
 .percent {
   color: rgb(88, 96, 105)
 }
 
-#gh-dark-mode-only:target .percent {
-  color: #8b949e;
+@media (prefers-color-scheme: dark) {
+  #background {
+    fill: #0d1117;
+    stroke-width: 0.5px;
+  }
+  
+  h2 {
+    color: #c9d1d9;
+    fill: #c9d1d9;
+  }
+  
+  .octicon {
+    color: #8b949e;
+    fill: #8b949e;
+  }
+
+  .progress {
+    background-color: rgba(110, 118, 129, 0.4);
+  }
+
+  .lang {
+    color: #c9d1d9;
+  }
+
+  .percent {
+    color: #8b949e;
+  }  
 }
 </style>
 <g>
