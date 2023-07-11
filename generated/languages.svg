@@ -81,10 +81,6 @@ div.ellipsis {
   border-collapse: collapse;
 }
 
-#gh-dark-mode-only:target .progress-item {
-  outline: 2px solid #393f47;
-}
-
 .lang {
   font-weight: 600;
   margin-right: 4px;
@@ -119,6 +115,10 @@ div.ellipsis {
     color: #c9d1d9;
   }
 
+  .progress-item {
+    outline: 2px solid #393f47;
+  }
+  
   .percent {
     color: #8b949e;
   }  
